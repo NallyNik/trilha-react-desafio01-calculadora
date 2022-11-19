@@ -1,7 +1,7 @@
 
-import { ButtonContainer } from './styles';
+import { ButtonContainer, ButtonSpecial } from './styles';
 
-const Button = ({label, onClick}) => {
+export const Button = ({label, onClick}) => {
     return (
       <ButtonContainer onClick={onClick} type="button">
        {label}
@@ -9,4 +9,11 @@ const Button = ({label, onClick}) => {
     );
   }
   
-  export default Button;
+export const ButtonS = ({label, onClick}) => {
+    return (
+      <ButtonSpecial onClick={onClick} type="button">
+       {label}
+      </ButtonSpecial>
+    );
+  }
+  
